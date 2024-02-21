@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysqldb:3306/koushik
+    username: root
+    password: Koushik@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

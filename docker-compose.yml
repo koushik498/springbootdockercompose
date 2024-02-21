@@ -3,7 +3,7 @@ services:
   application:
     image: springjpaimg
     ports:
-      - "8080:8090"
+      - "8080:9090"
     networks:
       - springboot-db-net
     depends_on:
@@ -16,7 +16,7 @@ services:
     networks:
       - springboot-db-net
     environment:
-      - MYSQL_ROOT_PASSWORD=Koushik@498
+      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=koushik
     volumes:
       - /data/mysql
